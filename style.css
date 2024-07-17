@@ -262,6 +262,76 @@ select, input, button{
 }
 /*Choose Your Destination section end here */
 
+/* Why choose us section start here */
+.choose-us-container{
+    max-width: 1000px;
+    height: 631px;
+    margin: 0 auto;
+}
+.choose-us-title{
+    margin: 0 auto;
+    text-align: center;
+}
+/* Choose us card style */
+.choose-us-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin-left: 20px;
+    gap: 20px;
+}
+.card-box-one{
+    width: 453px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background: rgba(251, 181, 99, 0.05);
+}
+.card-box1{
+    width: 380px;
+    height: 210px;
+    margin: 18px 32px;
+}
+.card-box-head{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.card-box-text{
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+.card-box-two{
+    width: 453px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    border-radius: 16px;    
+    background: rgba(41, 206, 246, 0.05);
+}
+.card-box2{
+    width: 380px;
+    height: 210px;
+    margin: 18px 32px;
+}
+.card-box-three{
+    width: 453px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    border-radius: 16px;    
+    background: rgba(233, 68, 68, 0.05);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.card-box3{
+    width: 380px;
+    height: 210px;
+    margin: 18px 32px;
+}
+/*  Why choose us section end here */
 
 
 
@@ -272,7 +342,7 @@ select, input, button{
 
 /* media query for mobile here */
 @media screen and (max-width: 576px) {
-    .banner-container, .banner-content, .popular-container, .destination-container {
+    .banner-container, .banner-content, .popular-container, .destination-container, .choose-us-container {
         width: 100%;
     }
     .banner-title{
@@ -293,7 +363,7 @@ select, input, button{
         width: 300px;
         margin: 16px auto;
     }
-    .popular-content, .box-1, .box-2, .box-3{
+    .popular-content, .box-1, .box-2, .box-3, .choose-us-content{
         grid-template-columns: 1fr;
     }
     .popular-image, .popular-title, .popular-head{
@@ -302,13 +372,13 @@ select, input, button{
     .popular-image{
         margin-top: 110px;
     }
-    .popular-ul{
+    .popular-ul, .card-box-one, .card-box-two, .card-box-three{
         width: 350px;
     }
     .destination-container{
         margin-top: 520px;
     }
-    .destination-title{
+    .destination-title, .choose-us-title{
         width: 340px;
         height: 80px;
     }
@@ -322,6 +392,17 @@ select, input, button{
     .box-one , .box-two, .box-three, .box-fore, .box-five, .box-six, .box-seven{
         width: 380px;
         margin-left: 2px;
+    }
+    .choose-us-content{
+        margin-top: 0;
+    }
+    .card-box1, .card-box2, .card-box3{
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+    .choose-us-container{
+        margin-top: 1300px;
     }
     
 }
